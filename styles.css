@@ -31,6 +31,7 @@ body{
     max-height: 30px;
     justify-content: flex-start;
     margin-top: 8px;
+    object-fit: contain;
 }
 .nav-2{
     justify-content: flex-end;
@@ -39,7 +40,7 @@ body{
 .search-bar {
     background-color: var(--color-lightGrey);
     height: 35px;
-    width: 300px;
+    width: 20vw;
     border-radius: 4px;
     padding: 10px;
     font-size: 14px;
@@ -70,18 +71,6 @@ body{
     padding: 30px;
     align-items: center;
 }
-.btn{
-    height: 40px;
-    width: 100%;
-    background-color: var(--color-tosca);
-    color: white;
-    border-radius: 20px;
-    font-size: 16px;
-    font-style: 600;
-}
-.btn:hover{
-    background-color: var(--color-lightTosca);   
-}
 .directory{
     width: 100%;
     margin:0;
@@ -102,14 +91,17 @@ p:hover{
 }
 .left{
     float: right;
-    margin-right: 100px;
+    margin-right: 10%;
 }
+
 /*my resources*/
 .content{
     width: 80%;
     padding: 30px;
     margin: 0;
 }
+
+/*my resources header*/
 .header-content {
     display: flex;
     flex-direction: row;
@@ -123,22 +115,45 @@ h1 {
 }
 .header-content-2{
     flex-direction: row;
+    width: 50%;
+    margin: 0;
+    padding-left: 30px;
+}
+.btn{
+    height: 40px;
+    width: 100px;
+    background-color: var(--color-tosca);
+    color: white;
+    border-radius: 20px;
+    font-size: 12px;
+    font-style: 600;
+    float: right;
+    margin-right: 20px;
+    font-size: 14px;
+    padding: 5px;
+}
+.btn:hover{
+    border: 2px solid var(--color-tosca);
+    background-color: white;
+    color: var(--color-Blue);
 }
 .btn-icon{
     height: 40px;
     width: 40px;
     border-radius: 4px;
     background-color: white;
+    margin: 0px 5px;
+    float: right;
 }
 .btn-icon:hover{
     background-color: var(--color-lightGrey);
-    color: var(--color-lightTosca);
+    color: var(--color-Blue);
     border: 1px solid var(--color-darkGrey);
 }
 
+/*table*/
 table {
     justify-content: flex-start;
-
 }
 tr, td{
     border-bottom: 1px solid var(--color-darkGrey);
@@ -147,12 +162,155 @@ tr, td{
     margin: 0;
     justify-content: flex-start;
 }
+td{
+    padding-left: 20px;
+}
 td:hover{
     background-color: var(--color-lightGrey);
 }
+.list{
+    color: black;
+}
 .space{
-    margin-left: 10px;
+    margin-right: 10px;
 }
 .space:hover{
     color: var(--color-Blue);
+}
+
+/*link rules*/
+a {text-decoration: none; color: black;}
+a:link {text-decoration: none; color: black;}
+a:active {text-decoration: none; color: black;}
+a:hover {text-decoration: none; color: var(--color-Blue);}
+
+
+/*-------------------responsive-mobile*/
+@media (max-width: 340px){
+    /*nav bar*/
+    .nav-1{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .logo{
+        margin: 0;
+    }
+    .search-bar{
+        margin-top: 20px;
+        width: 65vw;
+    }
+    .avatar{
+        margin-top: 20px;
+        margin-left: 10px;
+        width: 35px;
+        height: 35px;
+    }
+    /*content*/
+    .sidebar{
+        display: none;
+    }
+    h1{
+        font-size: 18px;
+        padding: 20px;
+    }
+    .content{
+        width: 100vw;
+        padding: 30px;
+    }
+    .mobile-directory{   
+    }
+    .header-content{
+        background-color: var(--color-lightGrey);
+        flex-direction: column;
+        padding: 0;
+    }
+    .header-content-2{
+        background-color: white;
+        flex-direction: row-reverse;
+        width: 100%;
+        padding: 10px;
+        height: 100%;
+    }
+    .btn{
+        margin-left: 20px;
+        height: 35px;
+        float: right;
+    }
+    .btn-icon{
+        background-color: yellow;
+        height: 35px;
+        width: 35px;
+        border-radius: 4px;
+        background-color: white;
+        float: left;
+        margin: 10px 0 20 0;
+    }
+    /*table*/ 
+    table{
+        margin-top: 20px;
+    }
+    }
+
+/*-------------------responsive - tablet*/
+@media (min-width: 341px) and (max-width: 768px){
+    /*nav bar*/
+    .nav-1{
+        flex-direction: column;
+    }
+    .logo{
+        margin: 0;
+    }
+    .search-bar{
+        margin-top: 20px;
+        width: 70vw;
+    }
+    .avatar{
+        margin-top: 20px;
+        margin-left: 10px;
+        width: 35px;
+        height: 35px;
+    }
+    /*content*/
+    .sidebar{
+        display: none;
+    }
+    h1{
+        font-size: 20px;
+        padding: 20px;
+    }
+    .content{
+        width: 100vw;
+        padding: 0;
+    }
+    .header-content{
+        background-color: var(--color-lightGrey);
+        flex-direction: column;
+        padding: 0;
+        border-bottom: none;
+    }
+    .header-content-2{
+        background-color: white;
+        flex-direction: row-reverse;
+        width: 100%;
+        padding: 10px;
+        height: 100%;
+    }
+    .btn{
+        margin-left: 20px;
+        height: 35px;
+        float: right;
+    }
+    .btn-icon{
+        background-color: yellow;
+        height: 35px;
+        width: 35px;
+        border-radius: 4px;
+        background-color: white;
+        float: left;
+        margin: 10px 0 20 0;
+    }
+    /*table*/ 
+    table{
+        margin-top: 20px;
+    }
 }
