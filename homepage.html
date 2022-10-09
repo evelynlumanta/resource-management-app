@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c303953d03.js" crossorigin="anonymous"></script>
-    <title>Homepage</title>
+    <title>Admin Page</title>
 </head>
 
 <body>
@@ -20,8 +20,9 @@
         <div class="nav-2">
             <!--search bar-->
             <input class="search-bar" type="text" placeholder= "Search folders...">
-            <!--login button-->
-            <button class="btn-login" type="button"><a href="/index.html">Log in</a></button>
+            <!--avatar-->
+            <a href="/index.html" class="avatar">
+                <img src="img/ic-avatar-user.png" alt="switch to homepage image"></a>
     </nav>
     <div class="divider"></div>
     
@@ -32,70 +33,66 @@
             <div class="directory">
                 <p>Files Directory</p>
                 <div class="divider"></div>
-                <p><a href="#"><i class="fa-regular fa-file-image space"></i>Background.jpeg</a></p>
-                <p><a href="#" class="p-size"><i class="fa-solid fa-folder fa-sm space"></i>Marketing</a></p>
-                <p><a href="#" class="indent p-size"><i class="fa-regular fa-circle fa-2xs space"></i>Christmas Campaign</a></p>
-                <p><a href="#" class="indent p-size"><i class="fa-regular fa-circle fa-2xs space"></i>Halloween Event</a></p>
+                <p><a href="#"><i class="fa-regular fa-file-image space"></i>Product Flow.jpeg</a></p>
+                <p><a href="#" class="p-size"><i class="fa-regular fa-file-lines space"></i>Design Thinking.pdf</a></p>
                 <p><a href="#" class="p-size"><i class="fa-solid fa-file-zipper space"></i>Asset.zip</a></p>
-                <p><a href="#" class="p-size"><i class="fa-regular fa-file-lines space"></i>Manual.pdf</a></p>
                 <p><a href="#" class="p-size"><i class="fa-solid fa-code space"></i>index.html</a></p>
+                <p><a href="#" class="p-size"><i class="fa-solid fa-folder fa-sm space"></i>Marketing</a></p>
+                <p><a href="#" class="indent p-size"><i class="fa-regular fa-circle fa-2xs space"></i>Lo-fi Wireframe.jpeg</a></p>
+                <p><a href="#" class="indent p-size"><i class="fa-regular fa-circle fa-2xs space"></i>Brainstorm Scribble.jpeg</a></p>
             </div>
         </div>
         <div class="content">
             <!--content header-->
             <div class="header-content">
                 <div class="header-content-1">
-                    <h1>Shared Resources</h1>
+                    <h1>My Resources</h1>
                 </div>
                 <div class="header-content-2">
+                        <button class="btn-icon active"><i class="fa-solid fa-list fa-xl"></i></button>
                         <button class="btn-icon"><i class="fa-solid fa-filter fa-xl"></i></i></button>
-                        <button class="btn-icon"><i class="fa-solid fa-list fa-xl"></i></button>
-                        <button class="btn-icon"><i class="fa-solid fa-cloud-arrow-down fa-xl"></i>
+                        <button class="btn-icon"><i class="fa-solid fa-folder-plus fa-xl"></i></button>
+                        <button class="btn"><i class="fa-solid fa-arrow-up-from-bracket fa-xl space"></i>Upload</button>
                 </div>
-
             </div>
             <div>
+                <!--table-->
                 <table>
                     <tr>
-                        <td><i class="fa-regular fa-file-image space"></i><a href="#" class="list">Background.jpeg</a>
-                            <div class="table-icons">
-                                <i class="fa-sharp fa-solid fa-circle-down"></i>
-                                <i class="fa-solid fa-ellipsis indent"></i>
-                            </div>  
-                        </td>
+                        <th><p class="th-p">Name    <i class="fa-solid fa-arrow-up fa-xs"></i></p></th>
+                        <th><p class="th-p m-hidden">Shared By</p></th>
+                        <th><p class="th-p m-hidden">Shared Date</p></th>
+                        <th><p class="th-p m-hidden"></p></th>
                     </tr>
                     <tr>
-                        <td><i class="fa-solid fa-folder space"></i><a href="#" class="list">Marketing</a>
-                            <div class="table-icons">
-                                <i class="fa-sharp fa-solid fa-circle-down"></i>
-                                <i class="fa-solid fa-ellipsis indent"></i>
-                            </div> 
-                        </td>
-                        
+                        <td><i class="fa-regular fa-file-image table-row space"></i><a href="#">Product Flow.jpeg</a></td>
+                        <td><p class="td-p m-hidden"><img src="/img/img-admin-avatar.png" class="td-img m-indent">evelyn lumanta</p></td>
+                        <td><p class="td-p m-hidden">7 October 2022</p></td>
+                        <td><i class="fa-solid fa-circle-down td-space"></i><i class="fa-solid fa-ellipsis m-indent"></i></td>
                     </tr>
                     <tr>
-                        <td><i class="fa-solid fa-file-zipper space"></i><a href="#" class="list">Asset.zip</a>
-                            <div class="table-icons">
-                                <i class="fa-sharp fa-solid fa-circle-down"></i>
-                                <i class="fa-solid fa-ellipsis indent"></i>
-                            </div>
-                            </td>
+                        <td><i class="fa-regular fa-file-lines space"></i><a href="#">Design Thinking.pdf</a></td>
+                        <td><p class="td-p m-hidden"><img src="/img/img-admin-avatar.png" class="td-img m-indent">evelyn lumanta</p></td>
+                        <td><p class="td-p m-hidden">7 October 2022</p></td>
+                        <td><i class="fa-solid fa-circle-down td-space"></i><i class="fa-solid fa-ellipsis m-indent"></i></td>
                     </tr>
                     <tr>
-                        <td><i class="fa-regular fa-file-lines space"></i><a href="#" class=" list">Manual.pdf</a>
-                            <div class="table-icons">
-                                <i class="fa-sharp fa-solid fa-circle-down"></i>
-                                <i class="fa-solid fa-ellipsis indent"></i>
-                            </div>
-                        </td>
+                        <td><i class="fa-solid fa-file-zipper space"></i><a href="#">Asset.zip</a></td>
+                        <td><p class="td-p m-hidden"><img src="/img/img-admin-avatar.png" class="td-img m-indent">evelyn lumanta</p></td>
+                        <td><p class="td-p m-hidden">7 October 2022</p></td>
+                        <td><i class="fa-solid fa-circle-down td-space"></i><i class="fa-solid fa-ellipsis m-indent"></i></td>
                     </tr>
                     <tr>
-                        <td><i class="fa-solid fa-code space"></i><a href="#" class=" list">index.html</a>
-                            <div class="table-icons">
-                                <i class="fa-sharp fa-solid fa-circle-down"></i>
-                                <i class="fa-solid fa-ellipsis indent"></i>
-                            </div> 
-                        </td>
+                        <td><i class="fa-solid fa-code space"></i><a href="#">index.html</a></td>
+                        <td><p class="td-p m-hidden"><img src="/img/img-admin-avatar.png" class="td-img m-indent">evelyn lumanta</p></td>
+                        <td><p class="td-p m-hidden">7 October 2022</p></td>
+                        <td><i class="fa-solid fa-circle-down td-space"></i><i class="fa-solid fa-ellipsis m-indent"></i></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-folder space"></i><a href="#">Figma Asset</a></td>
+                        <td><p class="td-p m-hidden"><img src="/img/img-admin-avatar.png" class="td-img m-indent">evelyn lumanta</p></td>
+                        <td><p class="td-p m-hidden">7 October 2022</p></td>
+                        <td><i class="fa-solid fa-circle-down td-space"></i><i class="fa-solid fa-ellipsis m-indent"></i></td>
                     </tr>
                 </table>
             </div>
