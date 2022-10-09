@@ -217,7 +217,7 @@ a:hover {text-decoration: none; color: var(--color-Blue);}
     }
     .search-bar{
         margin-top: 20px;
-        width: 65vw;
+        width: 60vw;
     }
     .avatar{
         margin-top: 20px;
@@ -227,9 +227,10 @@ a:hover {text-decoration: none; color: var(--color-Blue);}
     }
     .btn-login{
         margin-top: 20px;
-        margin-left: 10px;
-        width: 100px;
+        margin-left: 0;
+        width: 70px;
         height: 35px;
+        float: right;
     }
     /*content*/
     .sidebar{
@@ -241,9 +242,7 @@ a:hover {text-decoration: none; color: var(--color-Blue);}
     }
     .content{
         width: 100vw;
-        padding: 30px;
-    }
-    .mobile-directory{   
+        padding: 0;
     }
     .header-content{
         background-color: var(--color-lightGrey);
@@ -288,13 +287,20 @@ a:hover {text-decoration: none; color: var(--color-Blue);}
     }
     .search-bar{
         margin-top: 20px;
-        width: 70vw;
+        width: 60vw;
     }
     .avatar{
         margin-top: 20px;
         margin-left: 10px;
         width: 35px;
         height: 35px;
+    }
+    .btn-login{
+        margin-top: 20px;
+        margin-left: 0;
+        width: 70px;
+        height: 35px;
+        float: right;
     }
     /*content*/
     .sidebar{
