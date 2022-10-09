@@ -225,6 +225,12 @@ a:hover {text-decoration: none; color: var(--color-Blue);}
         width: 35px;
         height: 35px;
     }
+    .btn-login{
+        margin-top: 20px;
+        margin-left: 10px;
+        width: 100px;
+        height: 35px;
+    }
     /*content*/
     .sidebar{
         display: none;
